@@ -3,6 +3,14 @@ This repository holds example code on how to visualize a set of proteins in 3D s
 When hovering over points, images of structures predicted via AlphaFold 2 (AF2) are shown. An interactive 3D visualization of the structure can also be shown in the right panel via clicking on one of the points.
 
 Using the family of Three-finger toxins (3FTx), we exemplify how such analysis can help to derive hypothesis on the phylogenetics of this family.
+An example of this is hosted [here](http://3ftx.pythonanywhere.com/).
+
+<br/>
+<p align="center">
+    <img width="70%" src="https://github.com/mheinzinger/ProtSpace3D/raw/master/example_output.png" alt="Example output">
+</p>
+<br/>
+
 
 # Getting started
 
@@ -29,4 +37,4 @@ Simply run the dash board via:
 python app.py
 ```
 Next, you can access the 3D visulization by accessing http://127.0.0.1:8050/ in your browser.
-An example of this is hosted [here](http://3ftx.pythonanywhere.com/).
+
