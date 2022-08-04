@@ -1,0 +1,7 @@
+numpy
+pandas
+h5py
+umap-learn
+dash
+dash-bio
+plotly
