@@ -26,7 +26,10 @@ Set up a local python virtual environment and install dependencies:
 python3 -m venv venv
 . venv/bin/activate
 pip install --upgrade pip wheel
+cd ProtSpace3D
 pip install -r requirements.txt
+wget https://rostlab.org/~deepppi/ProtSpace3D/mysite.zip
+unzip -q mysite.zip
 ```
 
 
