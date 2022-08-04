@@ -7,7 +7,7 @@ An example of this is hosted [here](http://3ftx.pythonanywhere.com/).
 
 <br/>
 <p align="center">
-    <img width="70%" src="https://github.com/mheinzinger/ProtSpace3D/raw/master/example_output.png" alt="Example output">
+    <img width="70%" src="https://raw.githubusercontent.com/mheinzinger/ProtSpace3D/main/example_output.png" alt="Example output">
 </p>
 <br/>
 
