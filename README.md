@@ -17,7 +17,7 @@ An example of this is hosted [here](http://3ftx.pythonanywhere.com/).
 Clone this repository and get started as described in the Usage section below:
 
 ```sh
-git clone https://github.com/Rostlab/EAT.git
+git clone https://github.com/Rostlab/ProtSpace3D.git
 ```
 
 Set up a local python virtual environment and install dependencies:
