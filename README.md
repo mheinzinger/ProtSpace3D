@@ -47,7 +47,10 @@ In order to visualize your own dataset, you need the following files:
 - A standard FASTA file holding your protein sequences
 - An H5-file holding per-protein embeddings, i.e., one fixed-length vector for each protein irrespective of its length. In the example here, ProtT5 per-protein embeddings were used (1024-d) for the FASTA file. Keys are FASTA-IDs, values are embeddings. Embeddings can be computed using, e.g., [Colab](https://colab.research.google.com/drive/1TUj-ayG3WO52n5N50S7KH9vtt6zRkdmj?usp=sharing) .
 - A CSV which holds FASTA-IDs in the first field and (potentially various) class-labels for coloring protein groups in the other fields. Depending on which fields/columns you want to use to color your plot, you might need to adjust the `read_csv` function in `app.py`.
+
+The following files are optional IF you only want the 3D scatter plot as described here (no 3D structures): [scatterExample](https://github.com/mheinzinger/ProtSpace3D/blob/main/scatterExample.py)
+
 - A directory holding (predicted) protein 3D structures. In the example, we used [ColabFold](https://github.com/sokrypton/ColabFold) to predict protein structures. File names need to match the IDs from the FASTA (but ending on .pdb)
 - A directory holding images/PNGs of the PDB files. File names need to match again the IDs (but ending on .png). PNGs can be generated using for [this](https://github.com/mheinzinger/ProtSpace3D/blob/main/pdb2png.py) script. Tip: you can use `mogrify -trim *.png` to truncate white borders from PNGs.
 
-What is crucial here is the mapping between the files; all files need to use the same IDs. Optimally, you start with a FASTA file that holds final IDs. From this file you generate embeddings and store them in H5 using the same IDs as keys. The CSV can be used to map between different sets of IDs and it holds the class labels which you want to color your proteins. 
+What is crucial here is the mapping between the files; all files need to use the same IDs. Optimally, you start with a FASTA file that holds final IDs. From this file you generate embeddings and store them in H5 using the same IDs as keys. The CSV can be used to map between different sets of IDs and it holds the class labels which you want to color your proteins.
