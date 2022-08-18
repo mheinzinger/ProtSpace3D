@@ -125,7 +125,7 @@ def read_id_mapping(id_mapping_p):
 
 def main():
     # root directory that holds, proteins.fasta, embeddings.h5, labels.csv and some output_file.html
-    root = Path.cwd() / "mysite"
+    root = Path.cwd() / "example_input"
     rep_seqs = root / "3and6_10char.fasta"
     emb_p = root / "3and6_10char.h5" 
     label_csv_p = root / "3and6_w10Char.csv"
