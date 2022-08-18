@@ -139,7 +139,17 @@ def main():
     grouping = read_csv(label_csv_p, representatives, id_idx=0)
 
     raw_embeddings = read_embeddings( emb_p) # reads in embeddings from H5PY format
-    embeddings = { identifier : embd if identifier in grouping else print(identifier) for identifier, embd in raw_embeddings.items() }
+    embeddings = dict()
+    missing = list()
+    for identifier, embd in raw_embeddings.items():
+        if identifier in grouping:
+            embeddings[identifier] = embd
+        else:
+            missing.append(identifier)
+
+    if len(missing) > 0:
+        print("Lost the following {} proteins due to ID-mismatch between CSV & FASTA: {}".format(
+                len(missing)))
     
     keys, data = zip(*embeddings.items())
     data = np.vstack(data) # matrix of values (protein-embeddings); n_proteins x embedding_dim
